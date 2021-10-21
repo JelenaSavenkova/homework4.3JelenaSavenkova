@@ -10,6 +10,7 @@ namespace homework4._3JelenaSavenkova
             int[] numbers = { 3, 30, 33, 300, 333, 3000, 3333, 30000, 33333 };
          
             Console.WriteLine($"The total value is {numbers.Sum()}");
+            #region odd/even  
             foreach (var resultNumbers in numbers)
             {
                 if (resultNumbers % 2 == 0)
@@ -20,9 +21,9 @@ namespace homework4._3JelenaSavenkova
                 {
                     Console.WriteLine($"Number {resultNumbers} is odd");
                 }
-
+               
             }
-
+            #endregion
             Console.ReadLine();
         }
     }
