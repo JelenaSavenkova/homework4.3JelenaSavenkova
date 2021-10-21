@@ -7,8 +7,22 @@ namespace homework4._3JelenaSavenkova
     {
         static void Main(string[] args)
         {
-            int[] numbers = { 3, 30, 300, 3000, 30000 };
-            Console.WriteLine(numbers.Sum());
+            int[] numbers = { 3, 30, 33, 300, 333, 3000, 3333, 30000, 33333 };
+         
+            Console.WriteLine($"The total value is {numbers.Sum()}");
+            foreach (var resultNumbers in numbers)
+            {
+                if (resultNumbers % 2 == 0)
+                {
+                    Console.WriteLine($"Number {resultNumbers} is even");
+                }
+                else
+                {
+                    Console.WriteLine($"Number {resultNumbers} is odd");
+                }
+
+            }
+
             Console.ReadLine();
         }
     }
